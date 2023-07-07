@@ -25,14 +25,14 @@ public class VTools {
 
     @Subscribe
     public void onProxyInitialization(ProxyInitializeEvent event) {
-        server.getCommandManager().register("send", new CommandSend(server));
-        server.getCommandManager().register("sendall", new CommandSendall(server));
+//        server.getCommandManager().register("send", new CommandSend(server));
+//        server.getCommandManager().register("sendall", new CommandSendall(server));
         server.getCommandManager().register("broadcast", new CommandBroadcast(server), "bc", "alert");
         server.getCommandManager().register("find", new CommandFind(server), "search");
-        server.getCommandManager().register("staffchat", new CommandStaffChat(server), "sc");
-        server.getCommandManager().register("restart", new CommandRestart(server));
-        server.getCommandManager().register("tps", new CommandTp(server), "jump");
-        server.getCommandManager().register("servers", new CommandServers(server), "allservers");
+//        server.getCommandManager().register("staffchat", new CommandStaffChat(server), "sc");
+//        server.getCommandManager().register("restart", new CommandRestart(server));
+//        server.getCommandManager().register("tps", new CommandTp(server), "jump");
+//        server.getCommandManager().register("servers", new CommandServers(server), "allservers");
     }
 
 }
